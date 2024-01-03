@@ -1,0 +1,12 @@
+.animate-law{
+    animation:move 9000ms  infinite linear;
+}
+@keyframes move{
+    0% {
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+
