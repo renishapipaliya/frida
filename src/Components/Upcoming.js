@@ -74,7 +74,7 @@ function Upcoming() {
         >
           <div className=" bg-gray-400 rounded-l-2xl">
             <img
-              src="/assets/up1.png"
+              src="/assets/samsung a71.png"
               className="lg:h-[200px] md:h-60 h-[100px] md:w-[400px] w-[150px] lg:w-[400px]  "
             />
           </div>
