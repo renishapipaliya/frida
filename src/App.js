@@ -10,6 +10,7 @@ import Imfinix from './Components/Imfinix'
 import Realme from './Components/Realme'
 import Feedback from './Components/Feedback'
 import Upcoming from './Components/Upcoming'
+import Vs from './Components/Vs'
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
     <Realme />
     <Feedback />
     <Upcoming />
+    <Vs />
+   
 
     </>
   )

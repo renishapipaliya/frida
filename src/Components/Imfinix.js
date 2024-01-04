@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Imfinix() {
   return (
@@ -11,7 +11,7 @@ function Imfinix() {
       </div>
 
       <div className="border border-gray-200 mt-4 overflow-auto">
-        <div className="flex justify-between gap-3 mt-2 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth">
+        <div className="flex justify-between gap-3 mt-2 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth ">
           <div className="border border-black rounded-[5px]">
             <div className="bg-gray-300 rounded-t-[5px]">
               <img
@@ -160,4 +160,4 @@ function Imfinix() {
   );
 }
 
-export default Imfinix
+export default Imfinix;

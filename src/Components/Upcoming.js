@@ -47,22 +47,22 @@ function Upcoming() {
         >
           <div className=" bg-gray-400 rounded-l-2xl">
             <img
-              src="/assets/iphone15.png"
-              className="lg:h-[200px] md:h-60 h-[100px] md:w-[400px] w-[150px] lg:w-[200px]  "
+              src="/assets/moto34.png"
+              className="lg:h-[200px] md:h-60 h-[100px] md:w-[400px] w-[150px] lg:w-[400px]  "
             />
           </div>
           <div className="lg:mr-60 lg:mt-12 md:mt-10">
             <h1 className="font-bold lg:text-5xl md:text-4xl text-x">
-              X100 Series
+              moto g34 5G
             </h1>
             <p className="lg:text-[25px] md:text-[25px] text-[15px]">
-              ZEISS Multifocal Portrait
+              fastest 5G with SD 695
             </p>
-            <h1 className="font-bold lg:text-3xl md:text-2xl text-[14px]">
-              Launching Tommorrow,12PM
+            <h1 className="font-bold lg:text-3xl md:text-2xl text-[14px] text-blue-900">
+              Launching on January, 12PM
             </h1>
             <p className="lg:text-[20px] md:text-[20px] text-[13px]">
-              India' s 1st Media Tek Dimensity
+              Premium Vegan Leather Design*
             </p>
           </div>
         </div>
@@ -74,26 +74,28 @@ function Upcoming() {
         >
           <div className=" bg-gray-400 rounded-l-2xl">
             <img
-              src="/assets/samsung a71.png"
+              src="/assets/realme-C.png"
               className="lg:h-[200px] md:h-60 h-[100px] md:w-[400px] w-[150px] lg:w-[400px]  "
             />
           </div>
           <div className="lg:mr-60 lg:mt-12 md:mt-10">
             <h1 className="font-bold lg:text-5xl md:text-4xl text-x">
-              X100 Series
+              realme C30s
             </h1>
             <p className="lg:text-[25px] md:text-[25px] text-[15px]">
-              ZEISS Multifocal Portrait
+              fastest 5G
             </p>
-            <h1 className="font-bold lg:text-3xl md:text-2xl text-[14px]">
-              Launching Tommorrow,12PM
+            <h1 className="font-bold lg:text-3xl md:text-2xl text-[14px] text-blue-900">
+              Launching on Febuary,12PM
             </h1>
             <p className="lg:text-[20px] md:text-[20px] text-[13px]">
               India' s 1st Media Tek Dimensity
             </p>
           </div>
         </div>
-      </div> 
+      </div>
+      
+        
     </>
   );
 }
