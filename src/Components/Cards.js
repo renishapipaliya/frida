@@ -1,54 +1,66 @@
-import React from 'react'
+import React from "react";
 
-function Cards() {
+function Cards({item,handleClick}) {
+  const ImageList = [
+    {
+      id: 1,
+      img: "/assets/Redmi12.png",
+      title: "Redmi12",
+      description: 9499,
+      amount : 1
+    },
+    {
+      id: 2,
+      img: "/assets/infinix.jpg",
+      title: "infinix Note 30",
+      description: 13999,
+      amount : 1
+    },
+    {
+      id: 3,
+      img: "/assets/pocom6.png",
+      title: "Poco M6 5G",
+      description: 9499,
+      amount : 1
+    },
+  ];
+
+  const [id, title, description, img] = ImageList;
+
   return (
-    <div className="pt-10 h-[250px] bg-gray-300">
+    <div className="pt-10 h-[300px] bg-gray-300">
       <div className="flex justify-center md:gap-40 gap-2">
-        <div className="shadow-2xl w-[170px] md:w-[200px] md:h-[200px] h-[160px]">
-          <div className="md:h-[120px] h-[100px] border  bg-blue-100">
-            <img
-              src="/assets/Redmi12.png"
-              className="md:h-[110px] md:w-[70px] mx-auto  mt-2  h-[90px]"
-            />
+        {ImageList.map((item, index) => (
+          <div
+            key={item.id}
+            className="shadow-2xl w-[170px] md:w-[200px] md:h-[200px] lg:h-[250px]"
+          >
+            <div className="md:h-[120px] h-[100px] border bg-blue-100">
+              <img
+                src={item.img}
+                alt=""
+                className="md:h-[110px] md:w-[70px] mx-auto mt-2 h-[90px]"
+              />
+            </div>
+            <p className="text-gray-500 justify-center md:mt-3 mt-1 ml-9 md:text-[15px] text-[12px]">
+              {item.title}
+            </p>
+            <h1 className="font-bold ml-9 md:text-[15px] text-[12px] ">
+              ₹ {item.description}
+            </h1>
+            <div className="flex mx-[1rem] gap-5">
+              <button
+                onClick={() => handleClick(item)}
+                className="bg-black transition-all duration-100 px-5 my-1 rounded active:scale-90 ease-in-out shadow-md sm:text-sm text-white"
+              >
+                Add to Cart
+              </button>
+            </div>
           </div>
-          <p className="text-gray-500 justify-center md:mt-3 mt-1  ml-9 md:text-[15px] text-[12px]">
-            Redmi12
-          </p>
-          <h1 className="font-bold ml-9 md:text-[15px] text-[12px] ">
-            From ₹9,499*
-          </h1>
-        </div>
-        <div className="shadow-2xl md:w-[200px] w-[170px] md:h-[200px] h-[160px]">
-          <div className="md:h-[120px] h-[100px] border  bg-blue-100">
-            <img
-              src="/assets/infinix.jpg"
-              className="md:h-[110px] md:w-[100px] h-[90px] mx-auto mt-2"
-            />
-          </div>
-          <p className="text-gray-500 justify-center md:mt-3 mt-1 ml-9 md:text-[15px] text-[12px]">
-            infinix Note 30
-          </p>
-          <h1 className="font-bold  ml-9 md:text-[15px] text-[12px] ">
-            Just ₹13,999*
-          </h1>
-        </div>
-        <div className="shadow-2xl md:w-[200px] w-[170px] md:h-[200px] h-[160px]">
-          <div className="md:h-[120px] h-[100px] border  bg-blue-100">
-            <img
-              src="/assets/pocom6.png"
-              className="md:h-[110px] md:w-[100px] h-[90px] mx-auto mt-2 "
-            />
-          </div>
-          <p className="text-gray-500 justify-center md:mt-3 mt-1  ml-9 md:text-[15px] text-[12px]">
-            Poco M6 5G
-          </p>
-          <h1 className="font-bold  ml-9 md:text-[15px] text-[12px]">
-            From ₹9,499*
-          </h1>
-        </div>
+        ))}
       </div>
     </div>
   );
 }
 
-export default Cards
+export default Cards;

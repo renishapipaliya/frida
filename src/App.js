@@ -1,36 +1,71 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Lower from './Components/Lower'
-import Hero from './Components/Hero'
-import Cards from './Components/Cards'
-import Text from './Components/Text'
-import Main from './Components/Main'
-import Moto from './Components/Moto'
-import Imfinix from './Components/Imfinix'
-import Realme from './Components/Realme'
-import Feedback from './Components/Feedback'
-import Upcoming from './Components/Upcoming'
-import Vs from './Components/Vs'
+import React, {useState} from "react";
+import { Route, Routes } from "react-router-dom";
+
+import Navbar from "../src/Components/Navbar";
+import Home from "./routes/Home";
+import CartList from "./routes/CartList";
+import Cheackout from "./routes/Cheackout";
+
 
 function App() {
-  return (
-    <>
-    <Navbar />
-    <Lower />
-    <Hero />
-    <Cards />
-    <Text />
-    <Main />
-    <Moto />
-    <Imfinix />
-    <Realme />
-    <Feedback />
-    <Upcoming />
-    <Vs />
-   
+  
+  const [cart, setCart] = useState([]);
+  
 
-    </>
-  )
+  const handleClick = (item)=> {
+    let isPresent = false;
+    cart.forEach((product)=>{
+      if (item.id === product.id)
+      isPresent = true;
+    })
+    if (isPresent){
+     
+      return;
+    }
+    
+  setCart([...cart, item]);
+  }
+  const handleChange = (item, d) =>{
+    let ind = -1;
+    cart.forEach((data, index)=>{
+      if (data.id === item.id)
+      ind = index;
+    });
+
+
+
+    const tempArr = cart;
+    tempArr[ind].amount += d;
+    if (tempArr[ind].amount === 0)
+    tempArr[ind].amount = 1;
+  setCart([...tempArr])
+  }
+
+  
+  return (
+    <div>
+      <Navbar size={cart.length} />
+
+      <Routes>
+        <Route path="/" element={<Home handleClick={handleClick} />} />
+
+        <Route
+          path="/cartlist"
+          element={
+            <CartList
+              cart={cart}
+              setCart={setCart}
+              handleChange={handleChange}
+            />
+          }
+        />
+        <Route
+          path="/Cheackout"
+          element={<Cheackout cart={cart} setCart={setCart} />}
+        />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;

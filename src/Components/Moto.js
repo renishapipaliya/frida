@@ -19,17 +19,17 @@ function Moto() {
                 className="h-[100px] w-[80px] mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[13px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]   text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
                 moto G54 5G (128GB)
               </h1>
-              <p className="text-[12px] ml-2">Smooth performance</p>
-              <h1 className="font-bold ml-2">Just ₹12,999*</h1>
+              <p className="text-[13px] ml-2">Smooth performance</p>
+              <h1 className="font-bold ml-2 text-[20px]">Just ₹12,999*</h1>
             </div>
           </div>
 
@@ -40,17 +40,17 @@ function Moto() {
                 className="h-[100px] w-[80px]  mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[12px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]  text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
                 motorola edge 40 neo
               </h1>
-              <p className="text-[12px] ml-2">144Hz 10-bit Curved Screen</p>
-              <h1 className="font-bold ml-2 ">From ₹21,999*</h1>
+              <p className="text-[13px] ml-2">144Hz 10-bit Curved Screen</p>
+              <h1 className="font-bold ml-2 text-[20px]">From ₹21,999*</h1>
             </div>
           </div>
 
@@ -61,15 +61,17 @@ function Moto() {
                 className="h-[100px] w-[80px]  mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[12px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]  text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">moto g32</h1>
-              <p className="text-[12px] ml-2">8GB RAM| 128GB Storage</p>
-              <h1 className="font-bold ml-2 ">Just ₹8,999*</h1>
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
+                moto g32
+              </h1>
+              <p className="text-[13px] ml-2">8GB RAM| 128GB Storage</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹8,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -79,17 +81,17 @@ function Moto() {
                 className="h-[100px] w-[80px]  mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[12px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]  text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
                 moto G54 5G (256GB)
               </h1>
-              <p className="text-[12px] ml-2">Smooth performance</p>
-              <h1 className="font-bold ml-2 ">₹14,999*</h1>
+              <p className="text-[13px] ml-2">Smooth performance</p>
+              <h1 className="font-bold ml-2 text-[20px] ">₹14,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -99,15 +101,17 @@ function Moto() {
                 className="h-[100px] w-[80px]  mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[12px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]  text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">moto e13</h1>
-              <p className="text-[12px] ml-2">Big Battery|Premium Design</p>
-              <h1 className="font-bold ml-2 ">Just ₹7,499</h1>
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
+                moto e13
+              </h1>
+              <p className="text-[13px] ml-2">Big Battery|Premium Design</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹7,499</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -117,17 +121,17 @@ function Moto() {
                 className="h-[100px] w-[80px]  mx-auto"
               ></img>
               <div className="bg-blue-600 ml-[3px] mr-[3px] ">
-                <h1 className="text-[12px]  text-center text-white">
+                <h1 className="lg:text-[12px] md:text-[16px] text-[12px]  text-center text-white">
                   *incl.₹1,0000 off on Exch
                 </h1>
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
                 motorola edge 40 neo
               </h1>
-              <p className="text-[12px] ml-2">144Hz 10-bit Curved Screen</p>
-              <h1 className="font-bold ml-2 ">From ₹21,999*</h1>
+              <p className="text-[13px] ml-2">144Hz 10-bit Curved Screen</p>
+              <h1 className="font-bold ml-2 text-[20px] ">From ₹21,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -143,9 +147,11 @@ function Moto() {
               </div>
             </div>
             <div>
-              <h1 className="font-bold text-[14px] ml-2">moto g32</h1>
-              <p className="text-[12px] ml-2">8GB RAM| 128GB Storage</p>
-              <h1 className="font-bold ml-2 ">Just ₹8,999*</h1>
+              <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
+                moto g32
+              </h1>
+              <p className="text-[13px] ml-2">8GB RAM| 128GB Storage</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹8,999*</h1>
             </div>
           </div>
         </div>
