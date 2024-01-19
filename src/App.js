@@ -56,6 +56,7 @@ function App() {
               cart={cart}
               setCart={setCart}
               handleChange={handleChange}
+              size={cart.length}
             />
           }
         />

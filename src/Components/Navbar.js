@@ -28,12 +28,12 @@ function Navbar({size}) {
               <IoMdSearch className="absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
 
-            <Link className="" to="/CartList">
-              <FaShoppingCart className="text-2xl text-black drop-shadow-sm cursor-pointer " />
+            <Link to="/CartList">
+              <FaShoppingCart className="text-4xl  top-5  text-black drop-shadow-sm cursor-pointer " />
+              <span className="absolute h-4 rounded-full text-xs px-1 text-white top-5 bg-black">
+                {size}
+              </span>
             </Link>
-            <span className="ml-3 bg-black text-white rounded-full">
-              {size}
-            </span>
           </div>
         </div>
       </div>

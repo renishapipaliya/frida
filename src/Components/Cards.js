@@ -51,7 +51,7 @@ function Cards({item,handleClick}) {
             <div className="flex mx-[1rem] gap-5">
               <button
                 onClick={() => handleClick(item)}
-                className="bg-black transition-all duration-100 px-5 my-1 rounded active:scale-90 ease-in-out shadow-md sm:text-sm text-white"
+                className="bg-black px-5 my-1 rounded lg:text-[80%] md:text-[90%] text-[50%] text-white hover:bg-red-600"
               >
                 Add to Cart
               </button>
