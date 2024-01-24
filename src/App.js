@@ -5,9 +5,12 @@ import Navbar from "../src/Components/Navbar";
 import Home from "./routes/Home";
 import CartList from "./routes/CartList";
 import Cheackout from "./routes/Cheackout";
+import Lower from "./Components/Lower";
+import Products from "./Components/Products";
 
 
 function App() {
+  
   
   const [cart, setCart] = useState([]);
   
@@ -45,10 +48,10 @@ function App() {
   return (
     <div>
       <Navbar size={cart.length} />
-
+      <Lower />
       <Routes>
+        <Route path="/Products" element={<Products/>}></Route>
         <Route path="/" element={<Home handleClick={handleClick} />} />
-
         <Route
           path="/cartlist"
           element={

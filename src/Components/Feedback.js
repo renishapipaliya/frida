@@ -3,11 +3,11 @@ import React from 'react'
 function Feedback() {
   return (
     <div>
-      <div className="m-[40px] bg-blue-400 lg:w-[500px] md:w-[500px] w-[350px] h-[200px] 
+      <div className="m-[40px] bg-black lg:w-[500px] md:w-[500px] w-[350px] h-[200px] 
       lg:ml-[500px] md:ml-[150px] ml-[15px] rounded-[25px] md:h-[250px]">
         
           <h1 className='text-center  text-yellow-300 font-bold lg:text-[30px] md:text-[30px] underline'>Quick & Fun Survey</h1>
-          <p className='text-center text-black lg:text-[20px] md:text-[24px] text-[17px] mt-2 font-bold'>
+          <p className='text-center text-white lg:text-[20px] md:text-[24px] text-[17px] mt-2 font-bold'>
             Help us understand color perferences for your
             <br />
             smartphone

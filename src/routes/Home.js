@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../App.css";
 
 
 import Lower from "../Components/Lower";
@@ -20,7 +20,7 @@ function Home({item,handleClick}) {
     <>
     
     
-      <Lower />
+      
       <Hero />
       <Cards item={item} handleClick={handleClick} />
       <Text />
@@ -32,6 +32,7 @@ function Home({item,handleClick}) {
       <Upcoming />
       <Vs />
       <Footer />
+      
     </>
   );
 }

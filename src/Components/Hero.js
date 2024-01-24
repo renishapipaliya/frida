@@ -40,8 +40,8 @@ function Hero() {
   return (
     <>
       <div
-        className="relative overflow-hidden sm:min-h-[300px] bg-blue-400 flex justify-center
-    items-center 
+        className="relative overflow-hidden sm:min-h-[300px]   flex justify-center
+    items-center  shadow-2xl
     "
       >
         <div className="container pb-8 sm:pb-0">

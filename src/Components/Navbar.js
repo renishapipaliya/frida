@@ -9,8 +9,8 @@ function Navbar({size}) {
   
  
   return (
-    <div>
-      <div className="py-2 sm:py-0 bg-blue-400">
+    <div >
+      <div className="py-2 sm:py-0 ">
         <div className="flex justify-between items-center w-[100%] h-[100px]">
           <div>
             <img

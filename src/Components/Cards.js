@@ -28,7 +28,7 @@ function Cards({item,handleClick}) {
   const [id, title, description, img] = ImageList;
 
   return (
-    <div className="pt-10 h-[300px] bg-gray-300">
+    <div className="pt-10 h-[300px] ">
       <div className="flex justify-center md:gap-40 gap-2">
         {ImageList.map((item, index) => (
           <div
