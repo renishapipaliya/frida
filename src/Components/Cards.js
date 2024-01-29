@@ -6,22 +6,22 @@ function Cards({item,handleClick}) {
       id: 1,
       img: "/assets/Redmi12.png",
       title: "Redmi12",
-      description: 9499,
-      amount : 1
+      price: 9499,
+      amount: 1,
     },
     {
       id: 2,
       img: "/assets/infinix.jpg",
       title: "infinix Note 30",
-      description: 13999,
-      amount : 1
+      price: 13999,
+      amount: 1,
     },
     {
       id: 3,
       img: "/assets/pocom6.png",
       title: "Poco M6 5G",
-      description: 9499,
-      amount : 1
+      price: 9499,
+      amount: 1,
     },
   ];
 
@@ -46,7 +46,7 @@ function Cards({item,handleClick}) {
               {item.title}
             </p>
             <h1 className="font-bold ml-9 md:text-[15px] text-[12px] ">
-              ₹ {item.description}
+              ₹ {item.price}
             </h1>
             <div className="flex mx-[1rem] gap-5">
               <button

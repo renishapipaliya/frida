@@ -7,7 +7,7 @@ const CartList = ({ cart, setCart, handleChange, size }) => {
 
   const handlePrice = () => {
     let ans = 0;
-    cart.map((item) => (ans += item.amount * item.description));
+    cart.map((item) => (ans += item.amount * item.price));
     setPrice(ans);
   };
 
@@ -75,7 +75,7 @@ const CartList = ({ cart, setCart, handleChange, size }) => {
             </div>
             <div>
               <span className="font-bold lg:text-[80%] md:text-[90%] text-[70%] ">
-                Rs. {item.description}
+                Rs. {item.price * item.amount}
               </span>
             </div>
             <div>

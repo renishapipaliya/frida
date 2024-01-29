@@ -64,7 +64,7 @@ function Hero() {
                       <img
                         src={data.img}
                         alt=""
-                        className="lg:h-[300px] lg:w-[300px] sm:scale-125
+                        className="lg:h-[300px] lg:w-[300px] md:h-[300px] md:w-[300px] sm:scale-125
     object-contain mx-auto"
                       />
                     </div>

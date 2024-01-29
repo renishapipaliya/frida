@@ -26,10 +26,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                Infinix Smart 8HD
+                realme 11x
               </h1>
-              <p className="text-[13px] ml-2">Punch-Hole Display|Magic Ring</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹6,299*</h1>
+              <p className="text-[13px] ml-2">108MP 3x Zoom|67W Fast Charge</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹15,299*</h1>
             </div>
           </div>
 
@@ -47,10 +47,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                Infinix Note 30 5G(256GB)
+                realme 11pro
               </h1>
-              <p className="text-[12px] ml-2">108MP AI Cam|BIg FHD+Display</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹13,999*</h1>
+              <p className="text-[12px] ml-2">OIS ProLight Cam| Fast Charge</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹20,999*</h1>
             </div>
           </div>
 
@@ -68,10 +68,12 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                infinix hot 30i (128GB)
+                realme 11pro
               </h1>
-              <p className="text-[13px] ml-2">50MP Dual Cam|8GM RAM</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹7,449*</h1>
+              <p className="text-[13px] ml-2">
+                Leather Design|100W Fast Charge
+              </p>
+              <h1 className="font-bold ml-2 text-[20px] ">From ₹24,999 </h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -88,10 +90,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                Infinix Hot 11
+                realme C55
               </h1>
-              <p className="text-[13px] ml-2">13 MP Dual (64 GB RAM)</p>
-              <h1 className="font-bold ml-2 text-[20px] ">₹12,999*</h1>
+              <p className="text-[13px] ml-2">64MP|33W Fast Chragining</p>
+              <h1 className="font-bold ml-2 text-[20px] ">₹7,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -108,10 +110,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                Infinix Smart 8HD
+                realme C51
               </h1>
-              <p className="text-[13px] ml-2">Punch-Hole Display|Magic Ring</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹6,299*</h1>
+              <p className="text-[13px] ml-2">50MP AI Cam|33W Fast Charge</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹7,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -128,10 +130,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                Infinix Note 30 5G(256GB)
+                realme GT
               </h1>
-              <p className="text-[12px] ml-2">108MP AI Cam|BIg FHD+Display</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹13,999*</h1>
+              <p className="text-[12px] ml-2">SD 888|65W Charging</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹25,999*</h1>
             </div>
           </div>
           <div className="border border-black rounded-[5px]">
@@ -148,10 +150,10 @@ function Realme() {
             </div>
             <div>
               <h1 className="font-bold lg:text-[14px] md:text-[17px] ml-2">
-                infinix hot 30i (128GB)
+                realme Gt neo
               </h1>
-              <p className="text-[13px] ml-2">50MP Dual Cam|8GM RAM</p>
-              <h1 className="font-bold ml-2 text-[20px] ">Just ₹7,449*</h1>
+              <p className="text-[13px] ml-2">Superfast UltraDart Charge</p>
+              <h1 className="font-bold ml-2 text-[20px] ">Just ₹30,999*</h1>
             </div>
           </div>
         </div>

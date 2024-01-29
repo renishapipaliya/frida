@@ -20,7 +20,7 @@ function Home({item,handleClick}) {
     <>
     
     
-      
+  
       <Hero />
       <Cards item={item} handleClick={handleClick} />
       <Text />

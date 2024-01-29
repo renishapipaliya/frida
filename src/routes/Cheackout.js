@@ -6,7 +6,7 @@ function Cheackout({ cart, setCart }) {
 
   const handlePrice = () => {
     let ans = 0;
-    cart.map((item) => (ans += item.amount * item.description));
+    cart.map((item) => (ans += item.amount * item.price));
     setPrice(ans);
   };
 
