@@ -1,3 +1,7 @@
+
+
+
+
 export const infinix = [
   {
     id: 1,
@@ -134,71 +138,35 @@ export const apple = [
     amount: 1,
   },
 ];
+ export const Home = [
+   {
+     id: 17,
+     img: "/assets/Redmi12.png",
+     title: "Redmi12",
+     price: 9499,
+     amount: 1,
+   },
+   {
+     id: 18,
+     img: "/assets/infinix.jpg",
+     title: "infinix Note 30",
+     price: 13999,
+     amount: 1,
+   },
+   {
+     id: 19,
+     img: "/assets/pocom6.png",
+     title: "Poco M6 5G",
+     price: 9499,
+     amount: 1,
+   },
+   {
+     id: 20,
+     img: "/assets/iphone13.png",
+     title: "iphone13",
+     price: 52999,
+     amount: 1,
+   },
+ ];
+export const all = [...infinix, ...realme, ...moto, ...apple, ...Home];
 
-export const all = [
-  {
-    id: 17,
-    img: "/assets/infinix hot 11.png",
-    title: "Infinix Hot 11",
-    description: "13 MP Dual (64 GB RAM)",
-    price: 12999,
-    amount: 1,
-  },
-  {
-    id: 18,
-    img: "/assets/realme 11pro+.png",
-    title: "realme 11pro",
-    description: "50MP Dual Cam|8GM RAM",
-    price: 12999,
-    amount: 1,
-    // company: "realme",
-  },
-  {
-    id: 19,
-    img: "/assets/moto e13.png",
-    title: "moto e13",
-    description: "Leather Design|100W Fast Charge",
-    price: 24999,
-    amount: 1,
-  },
-  {
-    id: 20,
-    img: "/assets/iphone 15 promax.png",
-    title: "iphone 15 pro",
-    description: "512 GB Rom|4422 mAh battery",
-    price: 14999,
-    amount: 1,
-  },
-  {
-    id: 21,
-    img: "/assets/moto e13.png",
-    title: "moto e13",
-    description: "Leather Design|100W Fast Charge",
-    price: 24999,
-    amount: 1,
-  },
-  {
-    id: 22,
-    img: "/assets/redmi A2.png",
-    title: "redmi A2",
-    description: "Aqua Blue,2GB RAM, 64GB Storage",
-    price: 5299,
-    amount: 1,
-  },
-  {
-    id: 23,
-    img: "/assets/iphone13.png",
-    title: "iphone13",
-    description: "A15 Bionic chip|super Retina XDR display",
-    price: 52999,
-    amount: 1,
-  },
-  {
-    id: 24,
-    img: "/assets/samsung A15.png",
-    title: "samsung A15",
-    description: "50MP main Camera | Android 14 with One UIn6.0",
-    price: 19499,
-    amount: 1,
-  },
-];

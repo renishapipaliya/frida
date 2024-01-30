@@ -1,39 +1,20 @@
+
 import React from "react";
+import { Home } from "./Data";
 
 function Cards({item,handleClick}) {
-  const ImageList = [
-    {
-      id: 1,
-      img: "/assets/Redmi12.png",
-      title: "Redmi12",
-      price: 9499,
-      amount: 1,
-    },
-    {
-      id: 2,
-      img: "/assets/infinix.jpg",
-      title: "infinix Note 30",
-      price: 13999,
-      amount: 1,
-    },
-    {
-      id: 3,
-      img: "/assets/pocom6.png",
-      title: "Poco M6 5G",
-      price: 9499,
-      amount: 1,
-    },
-  ];
+  
 
-  const [id, title, description, img] = ImageList;
+  
 
   return (
-    <div className="pt-10 h-[300px] ">
-      <div className="flex justify-center md:gap-40 gap-2">
-        {ImageList.map((item, index) => (
+    <div className="pt-10 md:h-[520px] xl:h-[300px] lg:h-[300px] xs:h-[400px] ">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 md:gap-6 xs:grid-cols-2 xs:gap-3
+      xxs:grid-cols-2 xxs:gap-3 justify-center place-items-center grid-cols-2 gap-2">
+        {Home.map((item, index) => (
           <div
             key={item.id}
-            className="shadow-2xl w-[170px] md:w-[200px] md:h-[200px] lg:h-[250px]"
+            className="shadow-2xl w-[170px]  xl:h-[250px] lg:h-[250px] md:h-[220px]"
           >
             <div className="md:h-[120px] h-[100px] border bg-blue-100">
               <img

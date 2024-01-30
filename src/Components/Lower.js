@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Lower() {
   return (
     <>
-      <div className="flex justify-center gap-[100px] list-none font-bold text-xl bg-black text-white">
+      <div className="flex justify-center lg:gap-[100px] md:gap-[100px] gap-[10%] list-none font-bold lg:text-xl md:text-xl bg-black text-white">
         <Link to="/">
           <li>Home</li>
         </Link>
@@ -17,9 +17,7 @@ function Lower() {
         <Link>
           <li>Contact</li>
         </Link>
-       
       </div>
-     
     </>
   );
 }
