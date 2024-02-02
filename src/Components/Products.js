@@ -1,43 +1,15 @@
 import React, { useState } from "react";
-import { infinix, all, realme, moto, apple } from "../Components/Data";
+import { Data } from "../Components/Data";
+import { FaShoppingCart } from "react-icons/fa";
+import { IoLockClosedSharp } from "react-icons/io5";
 
 const Products = ({ item, handleClick }) => {
-  console.log(item);
-  const [openPick1, setOpenPick1] = useState(false);
-  const [openPick2, setOpenPick2] = useState(false);
-  const [openPick3, setOpenPick3] = useState(false);
-  const [openPick4, setOpenPick4] = useState(false);
-  const [openPick5, setOpenPick5] = useState(false);
-
-  const handlePickClick = (pickNumber) => {
-    // Close all picks
-    setOpenPick1(false);
-
-    setOpenPick2(false);
-    setOpenPick3(false);
-    setOpenPick4(false);
-    setOpenPick5(false);
-
-    // Open the clicked pick
-    switch (pickNumber) {
-      case 1:
-        setOpenPick1(true);
-        break;
-      case 2:
-        setOpenPick2(true);
-        break;
-      case 3:
-        setOpenPick3(true);
-        break;
-      case 4:
-        setOpenPick4(true);
-        break;
-      case 5:
-        setOpenPick5(true);
-        break;
-      default:
-        break;
-    }
+  const [data, setData] = useState(Data);
+  const filterResult = (catItem) => {
+    const result = Data.filter((curData) => {
+      return curData.category === catItem;
+    });
+    setData(result);
   };
 
   return (
@@ -46,14 +18,14 @@ const Products = ({ item, handleClick }) => {
         className="grid xl:grid-cols-5 lg:grid-cols-5 xs:grid-cols-3 xxs:grid-cols-2 xxs:gap-4 xs:gap-5 gap-3 md:grid-cols-5 xl:my-5 lg:my-5 md:my-5 xs:my-5 xxs:my-5  xl:place-items-center md:place-items-center lg:
       xs:place-items-center xxs:place-items-center grid-cols-2 place-items-center my-5"
       >
-        <div onClick={() => handlePickClick(1)}>
+        <div onClick={() => setData(Data)}>
           <div className="xl:size-24 lg:size-24 md:size-24 size-20 xs:size-20 xxs:size-20 border-2 border-black rounded-full ">
             <h1 className="xl:text-2xl lg:text-3xl md:text-3xl xs:text-2xl  text-2xl xxs:text-2xl xxs:my-5 my-5 xs:my-5 md:my-8 text-center xl:my-7 lg:my-7 font-bold">
               All
             </h1>
           </div>
         </div>
-        <div onClick={() => handlePickClick(2)}>
+        <div onClick={() => filterResult("Infinix")}>
           <div className="xl:size-24 lg:size-24 md:size-24 size-20 xs:size-20 xxs:size-20 border-2 border-black rounded-full ">
             <img
               src="/assets/infinix logo.png"
@@ -62,7 +34,7 @@ const Products = ({ item, handleClick }) => {
             />
           </div>
         </div>
-        <div onClick={() => handlePickClick(3)}>
+        <div onClick={() => filterResult("realme")}>
           <div className="xl:size-24 lg:size-24 xs:size-20 size-20 md:size-24 xxs:size-20 border-2 border-black rounded-full ">
             <img
               src="/assets/realme logo.png"
@@ -71,7 +43,7 @@ const Products = ({ item, handleClick }) => {
             />
           </div>
         </div>
-        <div onClick={() => handlePickClick(4)}>
+        <div onClick={() => filterResult("moto")}>
           <div className="xl:size-24 lg:size-24 xs:size-20 size-20 md:size-24 xxs:size-20 border-2 border-black rounded-full ">
             <img
               src="/assets/Moto.png"
@@ -80,7 +52,7 @@ const Products = ({ item, handleClick }) => {
             />
           </div>
         </div>
-        <div onClick={() => handlePickClick(5)}>
+        <div onClick={() => filterResult("iphone")}>
           <div className="xl:size-24 lg:size-24 xs:size-20 size-20 md:size-24 xxs:size-20 border-2 border-black rounded-full ">
             <img
               src="/assets/iphonelogo.png"
@@ -91,145 +63,68 @@ const Products = ({ item, handleClick }) => {
         </div>
       </div>
 
-      {openPick1 && (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-20 mx-[40px] my-[100px] ">
-          {all?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="w-[200px] h-[300px]" />
-              </div>
-              <hr className="bg-black h-[2px] w-auto my-4"></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
-                  onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
-                >
-                  Add to Cart
-                </button>
-              </div>
+      <div
+        className="grid xl:grid-cols-4 lg:grid-cols-4 lg:gap-9 md:grid-cols-4 md:gap-4 xs:grid-cols-2 xs:gap-8 xxs:grid-cols-2   xl:gap-20 xl:mx-[40px] xl:my-[100px]
+        lg:my-[100px] xs:my-[100px] xxs:my-[100px] md:my-[100px] my-[70px] 
+        grid-cols-2 "
+      >
+        {data?.map((item) => (
+          <div
+            key={item.id}
+            className=" xl:w-[300px] lg:w-[230px] md:w-[190px] xs:w-[193px] xxs:w-[183px] shadow-xl "
+          >
+            <div className="xl:mx-[45px]  lg:mx-[60px] md:mx-[60px] xs:mx-[60px] xxs:mx-[40px] mx-[20px] my-2">
+              <img
+                src={item.img}
+                alt=""
+                className="xl:w-[200px] xl:h-[300px] lg:w-[110px] lg:h-[150px] md:w-[110px] md:h-[120px] 
+                  xs:w-[100px] xs:h-[130px] xxs:w-[120px] xxs:h-[150px] w-[100px] h-[120px] "
+              />
             </div>
-          ))}
-        </div>
-      )}
-      {openPick2 && (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-[2%] my-[100px] ">
-          {infinix?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="w-[200px] h-[300px]" />
-              </div>
-              <hr className="bg-black h-[2px] w-auto my-4"></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
-                  onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {openPick3 && (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-[2%] my-[100px] ">
-          {realme?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="w-[200px] h-[300px]" />
-              </div>
-              <hr className="bg-black h-[2px] w-auto my-4"></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
-                  onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {openPick4 && (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-[2%] my-[100px] ">
-          {moto?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="w-[200px] h-[300px]" />
-              </div>
-              <hr className="bg-black h-[2px] w-auto my-4"></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
-                  onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {openPick5 && (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-[2%] my-[100px] ">
-          {apple?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="w-[200px] h-[300px]" />
-              </div>
-              <hr className="bg-black h-[2px] w-auto my-4"></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
-                  onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
 
-      {!openPick1 && !openPick2 && !openPick3 && !openPick4 && !openPick5 && (
-        <div className="grid xl:grid-cols-4 lg:grid-cols-4 xs:grid-cols-2 xxs:grid-cols-2 md:grid-cols-2 lg:  justify-center xl:gap-20 xl:mx-[40px] my-[100px] ">
-          {all?.map((item) => (
-            <div key={item.id} className=" shadow-xl w-[300px]">
-              <div className="mx-[45px]">
-                <img src={item.img} alt="" className="xl:w-[200px] xl:h-[300px] lg:h-[150px] lg:w-[100px]" />
-              </div>
-              <hr className="bg-black h-[2px] xl:w-auto lg:w-[100px] my-4 "></hr>
-              <div className="mx-10 w-[250px] my-4">
-                <h1 className="font-bold text-2xl">{item.title}</h1>
-                <h1 className="text-[15px]">{item.description}</h1>
-                <p className="font-bold text-xl">₹{item.price}</p>
-                <button
+            <div className="xl:mx-10 xl:w-[250px] my-4">
+              <h1
+                className="font-bold xl:text-2xl lg:text-xl lg:mx-3 md:mx-4 md:text-[17px] xs:text-[17px] xs:mx-6
+                xxs:text-[15px] xxs:mx-4 text-[15px] mx-3"
+              >
+                {item.title}
+              </h1>
+              <h1
+                className="xl:text-[15px] lg:text-[14px] md:text-[13px] lg:mx-3 md:mx-4 xs:text-[12px] xs:mx-6 
+                xxs:text-[12px] xxs:mx-4 text-[12px] mx-3"
+              >
+                {item.description}
+              </h1>
+              <p
+                className="font-bold xl:text-xl lg:text-xl md:text-[17px] md:mx-4 lg:mx-3
+                xs:text-[15px] xs:mx-6 xxs:text-[15px] xxs:mx-4 text-[15px] mx-3"
+              >
+                ₹{item.price}
+              </p>
+              <div className="flex gap-6 md:gap-4  my-1">
+                <FaShoppingCart
                   onClick={() => handleClick(item)}
-                  className="bg-black text-white font-semibold rounded-[3px] w-[100px] hover:bg-red-600 hover:text-white"
+                  className="text-black xl:size-8 md:size-6 xs:size-5 xxs:size-5 xxs:ml-4 xs:ml-5 lg:size-7 lg:my-0.5 lg:mx-2  md:my-0.5 md:mx-3 hover:text-red-800 xl:my-0.5 xl:mx-3"
+                />
+
+                <button
+                  className="text-white bg-black rounded-[3px] xl:w-[130px] lg:w-[100px] md:w-[90px] md:h-[25px] font-bold flex  xl:h-[30px] xl:my-0.5 lg:h-7 lg:my-0.5 
+                hover:bg-white hover:text-black hover:border border-black xs:w-[85px] xxs:w-[85px] "
                 >
-                  Add to Cart
+                  <IoLockClosedSharp
+                    className=" xl:size-5 lg:size-5 md:size-4 xl:ml-5 md:ml-1  lg:ml-2 lg:my-0.5  xl:my-1 md:my-1 
+                  xs:size-4 xs:ml-1 xxs:size-4 xxs:ml-1  "
+                  />
+                  <mark className="xl:my-1 bg-black hover:bg-white text-white hover:text-black xs:text-[14px] xxs:text-[14px]">
+                    {" "}
+                    Buy Now{" "}
+                  </mark>
                 </button>
               </div>
             </div>
-          ))}
-        </div>
-      )}
+          </div>
+        ))}
+      </div>
     </>
   );
 };

@@ -41,10 +41,10 @@ function Hero() {
     <>
       <div
         className="relative overflow-hidden sm:min-h-[300px]   flex justify-center
-    items-center  shadow-2xl
+    items-center  shadow-xl
     "
       >
-        <div className="container pb-8 sm:pb-0">
+        <div className="container pb-8 sm:pb-0 -z-50">
           <Slider {...settings}>
             {ImageList.map((data) => (
               <div key={data.id}>

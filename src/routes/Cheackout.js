@@ -105,7 +105,7 @@ function Cheackout({ cart, setCart }) {
             </form>
           </div>
 
-          <div className="border border-black h-[720px] lg:w-[500px] lg:h-[830px] md:w-[100%] md:h-[200%] my-[40px]">
+          <div className="border border-black h-[720px] lg:w-[500px] lg:h-[620px] md:w-[100%] md:h-[200%] my-[100px]">
             <div>
               <div>
                 <h1 className="font-bold text-2xl mx-3 ">Your order</h1>
@@ -116,19 +116,7 @@ function Cheackout({ cart, setCart }) {
               </div>
               <hr className="border border-gray-500 my-3"></hr>
               <div>
-                {cart?.map((item, index) => (
-                  <div key={index}>
-                    <div className="flex  justify-between  mx-4">
-                      <h1 className="lg:text-[18px] md:text-[20px]">
-                        {item.title}
-                      </h1>
-                      <h1 className="lg:text-[18px] md:text-[20px]">
-                        {item.description}
-                      </h1>
-                    </div>
-                    <hr className="border border-gray-500 my-3"></hr>
-                  </div>
-                ))}
+                
                 <div className="flex justify-between  mx-4">
                   <h1 className="lg:text-[18px] md:text-[20px]">SubTotal</h1>
                   <h1 className="lg:text-[18px] md:text-[20px]">

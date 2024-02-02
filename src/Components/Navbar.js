@@ -9,7 +9,7 @@ function Navbar({size}) {
   
  
   return (
-    <div >
+    <div className="bg-white top-0 sticky">
       <div className="py-2 sm:py-0 ">
         <div className="flex justify-between items-center w-[100%] h-[100px]">
           <div>

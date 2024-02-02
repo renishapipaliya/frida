@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className="mt-5  h-[600px] md:h-[550px] lg:h-[300px] lg:px-28 lg:py-4 md:px-10 px-4">
-      <div className="  text-black grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3">
+    <div className="mt-5  h-[600px] md:h-[550px] lg:h-[300px] lg:px-28 lg:py-4 md:px-10 px-4 bg-sky-950">
+      <div className="  text-white grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3">
         <div className="font-bold text-[12px] md:text-[20px] lg:text-[15px]">
           <h1 className="mb-3 mt-3 text-xl">ABOUT</h1>
           <p>Contact Us</p>

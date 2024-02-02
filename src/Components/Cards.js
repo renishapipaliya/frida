@@ -14,7 +14,7 @@ function Cards({item,handleClick}) {
         {Home.map((item, index) => (
           <div
             key={item.id}
-            className="shadow-2xl w-[170px]  xl:h-[250px] lg:h-[250px] md:h-[220px]"
+            className="shadow-xl w-[170px]  xl:h-[250px] lg:h-[250px] md:h-[220px]"
           >
             <div className="md:h-[120px] h-[100px] border bg-blue-100">
               <img

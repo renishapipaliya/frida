@@ -101,7 +101,7 @@ const CartList = ({ cart, setCart, handleChange, size }) => {
           Total Price : <mark className="bg-white text-red-600">{price}</mark>
         </div>
         <Link to="/Cheackout" className=" my-3 mx-2">
-          <button className="bg-green-600  md:w-[15%] rounded-[3px]  text-white lg:w-[100%] lg:text-[18px] md:text-[20px] text-[15px] w-[22%] hover:bg-black">
+          <button className="bg-green-600  md:w-[100%] rounded-[3px]  text-white lg:w-[100%] lg:text-[18px] md:text-[15px] text-[15px] w-[22%] hover:bg-black">
             Cheackout
           </button>
         </Link>

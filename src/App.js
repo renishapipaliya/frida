@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "../src/Components/Navbar";
@@ -8,7 +8,9 @@ import Cheackout from "./routes/Cheackout";
 import Lower from "./Components/Lower";
 
 import Product from "./routes/Product";
-
+import Contact from "./routes/Contact";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -40,11 +42,18 @@ function App() {
     <div>
       <Navbar size={cart.length} />
       <Lower />
+    
       <Routes>
         <Route
           path="/Products"
           element={<Product handleClick={handleClick} />}
         />
+        <Route
+          path="/About"
+          element={<About
+             />}
+        />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/" element={<Home handleClick={handleClick} />} />
         <Route
           path="/cartlist"
@@ -62,6 +71,7 @@ function App() {
           element={<Cheackout cart={cart} setCart={setCart} />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }

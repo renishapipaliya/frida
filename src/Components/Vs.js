@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Vs() {
   return (
@@ -26,14 +27,15 @@ function Vs() {
             <br />
             vlebzaar
           </p>
-          
+          <Link to="/Cheackout">
+            
             <button
               className="bg-white text-black font-bold text-xl mt-3 rounded-[10px]
             cursore-pointer lg:h-[30px] lg:w-[150px] md:h-[30px] md:w-[150px]"
             >
               Shop now
             </button>
-        
+          </Link>
         </div>
       </div>
     </>
