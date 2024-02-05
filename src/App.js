@@ -11,6 +11,7 @@ import Product from "./routes/Product";
 import Contact from "./routes/Contact";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
+import ProductDetails from "./Components/ProductDetails";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -53,6 +54,7 @@ function App() {
           element={<About
              />}
         />
+        <Route path="/ProductDetails" element={<ProductDetails/>}/>
         <Route path="/Contact" element={<Contact />} />
         <Route path="/" element={<Home handleClick={handleClick} />} />
         <Route

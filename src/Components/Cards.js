@@ -14,7 +14,7 @@ function Cards({item,handleClick}) {
         {Home.map((item, index) => (
           <div
             key={item.id}
-            className="shadow-xl w-[170px]  xl:h-[250px] lg:h-[250px] md:h-[220px]"
+            className="shadow-xl w-[150px]  xl:h-[250px] lg:h-[250px] md:h-[220px]"
           >
             <div className="md:h-[120px] h-[100px] border bg-blue-100">
               <img
@@ -29,7 +29,7 @@ function Cards({item,handleClick}) {
             <h1 className="font-bold ml-9 md:text-[15px] text-[12px] ">
               ₹ {item.price}
             </h1>
-            <div className="flex mx-[1rem] gap-5">
+            <div className="flex md:mx-[1rem] mx-[2rem] gap-5">
               <button
                 onClick={() => handleClick(item)}
                 className="bg-black px-5 my-1 rounded lg:text-[80%] md:text-[90%] text-[50%] text-white hover:bg-red-600"

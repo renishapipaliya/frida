@@ -3,7 +3,7 @@ import React from 'react'
 function Main() {
   return (
     <div className="md:h-[410px] mt-5">
-      <div className="  flex justify-center md:gap-40 gap-20 ">
+      <div className="  flex justify-center md:gap-40 gap-8 ">
         
           <img src="/assets/iphone15.png" className='md:h-[400px] h-[200px] mt-3'/>
         

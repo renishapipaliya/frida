@@ -104,18 +104,19 @@ const Products = ({ item, handleClick }) => {
               <div className="flex gap-6 md:gap-4  my-1">
                 <FaShoppingCart
                   onClick={() => handleClick(item)}
-                  className="text-black xl:size-8 md:size-6 xs:size-5 xxs:size-5 xxs:ml-4 xs:ml-5 lg:size-7 lg:my-0.5 lg:mx-2  md:my-0.5 md:mx-3 hover:text-red-800 xl:my-0.5 xl:mx-3"
+                  className="text-black xl:size-8 size-5 ml-3 md:size-6 xs:size-5 xxs:size-5 xxs:ml-4 xs:ml-5 lg:size-7 lg:my-0.5 lg:ml-2  md:my-0.5 md:ml-3 hover:text-red-800 xl:my-0.5 xl:ml-3"
                 />
 
                 <button
                   className="text-white bg-black rounded-[3px] xl:w-[130px] lg:w-[100px] md:w-[90px] md:h-[25px] font-bold flex  xl:h-[30px] xl:my-0.5 lg:h-7 lg:my-0.5 
-                hover:bg-white hover:text-black hover:border border-black xs:w-[85px] xxs:w-[85px] "
+                hover:bg-white hover:text-black hover:border border-black xs:w-[85px] xxs:w-[85px] w-[85px] "
                 >
                   <IoLockClosedSharp
                     className=" xl:size-5 lg:size-5 md:size-4 xl:ml-5 md:ml-1  lg:ml-2 lg:my-0.5  xl:my-1 md:my-1 
-                  xs:size-4 xs:ml-1 xxs:size-4 xxs:ml-1  "
+                  xs:size-4 xs:ml-1 xxs:size-4 xxs:ml-1 ml-1  "
                   />
-                  <mark className="xl:my-1 bg-black hover:bg-white text-white hover:text-black xs:text-[14px] xxs:text-[14px]">
+                  <mark className="xl:my-1 bg-black hover:bg-white text-white hover:text-black 
+                  text-[14px] xs:text-[14px] xxs:text-[14px]">
                     {" "}
                     Buy Now{" "}
                   </mark>
