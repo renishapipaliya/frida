@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Data } from "../src/Components/Data";
+import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
 
 import Navbar from "../src/Components/Navbar";
 import Home from "./routes/Home";
 import CartList from "./routes/CartList";
 import Cheackout from "./routes/Cheackout";
+import Product from "./routes/Product";
 import Lower from "./Components/Lower";
 
-import Product from "./routes/Product";
 import Contact from "./routes/Contact";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import ProductDetails from "./Components/ProductDetails";
+import Login from "./Components/Login";
+import SignUp from "./Components/SignUp";
+
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -43,18 +47,18 @@ function App() {
     <div>
       <Navbar size={cart.length} />
       <Lower />
-    
+
       <Routes>
         <Route
-          path="/Products"
+          path="/product-details/:productId"
+          element={<ProductDetails data={Data} handleClick={handleClick} />}
+        />
+
+        <Route
+          path="/products"
           element={<Product handleClick={handleClick} />}
         />
-        <Route
-          path="/About"
-          element={<About
-             />}
-        />
-        <Route path="/ProductDetails" element={<ProductDetails/>}/>
+        <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/" element={<Home handleClick={handleClick} />} />
         <Route
@@ -68,6 +72,8 @@ function App() {
             />
           }
         />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route
           path="/Cheackout"
           element={<Cheackout cart={cart} setCart={setCart} />}

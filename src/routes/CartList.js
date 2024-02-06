@@ -41,11 +41,19 @@ const CartList = ({ cart, setCart, handleChange, size }) => {
 
       {cart.map((item, index) => (
         <div key={index}>
+             <Link
+              key={item.id}
+              to={`/product-details/${item.id}`}
+              className=" xl:w-[300px] lg:w-[230px] md:w-[190px] xs:w-[193px] xxs:w-[183px] shadow-xl "
+            >
           <div
             className="flex justify-between
             items-center  lg:mx-2 md:mx-2  "
           >
+           
+            
             <div>
+              
               <img
                 src={item.img}
                 className=" lg:w-[60px] lg:h-[90px] md:w-[60px] md:h-[90px] w-[40px] h-[60px] my-2"
@@ -89,6 +97,7 @@ const CartList = ({ cart, setCart, handleChange, size }) => {
             </div>
           </div>
           <div className="bg-gray-300 h-px my-2"></div>
+          </Link>
         </div>
       ))}
       <div className="flex justify-between ">

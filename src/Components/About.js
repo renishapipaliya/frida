@@ -57,7 +57,7 @@ function About() {
           </div>
           <div
             className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 xl:gap-20 xs:gap-4 md:gap-4 md:my-7 md:mx-[60px]
-          xs:mx-9 xs:my-5 xxs:gap-4 xxs:mx-[34px] xxs:my-5 gap-4 mx-[30px] my-5"
+          xs:mx-9 xs:my-5 xxs:gap-4 xxs:mx-[34px] xxs:my-5 gap-4 mx-[30px] my-5 -z-10"
           >
             <div
               className="bg-gray-300 xl:h-[140px] xl:w-[250px] lg:h-[100px] lg:w-[210px] md:w-[290px] md:h-[100px] bg-opacity-40

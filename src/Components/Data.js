@@ -7,6 +7,18 @@ export const Data = [
     price: 12999,
     amount: 1,
     category: "Infinix",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 2,
@@ -16,6 +28,18 @@ export const Data = [
     price: 13999,
     amount: 1,
     category: "Infinix",
+    Highlights: {
+      RM: "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+      dis: "17.22 cm (6.78 inch) Full HD+ Display",
+      battery: "6000 mAh Lithium Ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "50 MP Dual",
+      ram: "128 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 3,
@@ -25,6 +49,18 @@ export const Data = [
     price: 13999,
     amount: 1,
     category: "Infinix",
+    Highlights: {
+      RM: "4 GB RAM | 128 GB ROM | Expandable Upto 2 TB",
+      dis: "17.22 cm (6.78 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "108 MP + 2 NP",
+      ram: "128 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 4,
@@ -34,6 +70,18 @@ export const Data = [
     price: 14999,
     amount: 1,
     category: "Infinix",
+    Highlights: {
+      RM: "2 GB RAM | 32 GB ROM | Expandable Upto 256 GB",
+      dis: "16.56 cm (6.52 inch) HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "8 MP Dual",
+      ram: "32 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
 
   {
@@ -44,6 +92,18 @@ export const Data = [
     price: 12999,
     amount: 1,
     category: "realme",
+    Highlights: {
+      RM: "12 GB RAM | 256 GB ROM",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Battery",
+    },
+
+    specifications: {
+      camera: "100 MP (OIS)",
+      ram: "256 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 6,
@@ -53,6 +113,18 @@ export const Data = [
     price: 15299,
     amount: 1,
     category: "realme",
+    Highlights: {
+      RM: "8 GB RAM | 128 GB ROM | Expandable Upto 2 TB",
+      dis: "17.07 cm (6.72 inch) Full HD+ Display",
+      battery: "5000 mAh  Battery",
+    },
+
+    specifications: {
+      camera: "64 MP Dual",
+      ram: "128 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 7,
@@ -62,6 +134,18 @@ export const Data = [
     price: 24999,
     amount: 1,
     category: "realme",
+    Highlights: {
+      RM: "12 GB RAM | 256 GB ROM",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Battery",
+    },
+
+    specifications: {
+      camera: "100MP (OSI)",
+      ram: "256 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 8,
@@ -71,6 +155,18 @@ export const Data = [
     price: 14999,
     amount: 1,
     category: "realme",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
 
   {
@@ -81,6 +177,18 @@ export const Data = [
     price: 12999,
     amount: 1,
     category: "moto",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 10,
@@ -90,6 +198,18 @@ export const Data = [
     price: 13999,
     amount: 1,
     category: "moto",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 11,
@@ -99,6 +219,18 @@ export const Data = [
     price: 13999,
     amount: 1,
     category: "moto",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 12,
@@ -108,6 +240,18 @@ export const Data = [
     price: 14999,
     amount: 1,
     category: "moto",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
 
   {
@@ -118,6 +262,18 @@ export const Data = [
     price: 52999,
     amount: 1,
     category: "iphone",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 14,
@@ -127,6 +283,18 @@ export const Data = [
     price: 66999,
     amount: 1,
     category: "iphone",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
 
   {
@@ -137,6 +305,18 @@ export const Data = [
     price: 144900,
     amount: 1,
     category: "iphone",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
   {
     id: 16,
@@ -146,6 +326,18 @@ export const Data = [
     price: 14999,
     amount: 1,
     category: "iphone",
+    Highlights: {
+      RM: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+      dis: "17.02 cm (6.7 inch) Full HD+ Display",
+      battery: "5000 mAh Li-ion Polymer Battery",
+    },
+
+    specifications: {
+      camera: "13 MP Dual",
+      ram: "64 GB RAM",
+      display: "Full HD+",
+    },
+    features: ["Fingerprint Sensor", "Face Unlock", "AI Camera"],
   },
 ];
 export const Home = [

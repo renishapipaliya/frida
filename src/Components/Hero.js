@@ -41,7 +41,7 @@ function Hero() {
     <>
       <div
         className="relative overflow-hidden sm:min-h-[300px]   flex justify-center
-    items-center  shadow-xl
+    items-center  shadow-xl my-[11%]
     "
       >
         <div className="container pb-8 sm:pb-0 -z-50">
